@@ -1,0 +1,59 @@
+php
+
+require "../mpgClasses.php";
+
+/************************ Request Variables **********************************/
+
+$store_id='monusqa002'; //account credentials
+$api_token='qatoken';
+
+/************************ Transaction Object******************************/
+
+
+$txnArray=array(type=>'us_ach_debit',
+            order_id=>'ach-'.date("dmy-G:i:s"),
+            cust_id=> 'my cust id',
+            amount=>'1.00'
+            );
+
+$achTemplate = array(
+       sec =>'ppd',
+       cust_first_name =>  'Bob',
+                 cust_last_name =>  'Smith',
+                 cust_address1 => '101 Main St',
+                 cust_address2 =>  'Apt 102,
+                 cust_city => 'Chicago',
+                 cust_state =>  'IL',
+                 cust_zip =>'123456',
+                 routing_num => '490000018',
+                 account_num =>  '23456',
+                 check_num => '100',
+                 account_type => 'savings'
+                );
+
+$mpgAchInfo = new mpgAchInfo ($achTemplate);
+$mpgTxn = new mpgTransaction($txnArray);
+$mpgTxn->setAchInfo($mpgAchInfo);
+
+$mpgRequest = new mpgRequest($mpgTxn);
+$mpgHttpPost = new mpgHttpsPost($store_id,$api_token,$mpgRequest);
+
+/************************ Response Object **********************************/
+
+$mpgResponse=$mpgHttpPost->getMpgResponse();
+
+
+print("\nCardType = " . $mpgResponse->getCardType());
+print("\nTransAmount = " . $mpgResponse->getTransAmount());
+print("\nTxnNumber = " . $mpgResponse->getTxnNumber());
+print("\nReceiptId = " . $mpgResponse->getReceiptId());
+print("\nTransType = " . $mpgResponse->getTransType());
+print("\nReferenceNum = " . $mpgResponse->getReferenceNum());
+print("\nResponseCode = " . $mpgResponse->getResponseCode());
+print("\nMessage = " . $mpgResponse->getMessage());
+print("\nAuthCode = " . $mpgResponse->getAuthCode());
+print("\nComplete = " . $mpgResponse->getComplete());
+print("\nTransDate = " . $mpgResponse->getTransDate());
+print("\nTransTime = " . $mpgResponse->getTransTime());
+print("\nTicket = " . $mpgResponse->getTicket());
+print("\nTimedOut = " . $mpgResponse->getTimedOut());
