@@ -1,0 +1,11 @@
+{
+  "object": "cash_balance",
+  "available": {
+    "jpy": 0
+  },
+  "customer": "",
+  "livemode": false,
+  "settings": {
+    "reconciliation_mode": "automatic"
+  }
+}
