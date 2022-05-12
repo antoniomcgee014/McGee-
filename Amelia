@@ -1,0 +1,11 @@
+PUT https://api.xero.com/api.xro/2.0/BankTransfers
+
+
+copy code
+{
+  "BankTransfers": [{
+    "FromBankAccount": { "Code": "090" },
+    "ToBankAccount": { "Code": "091" },
+    "Amount": 20.00
+  }]
+}
