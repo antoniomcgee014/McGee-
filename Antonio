@@ -1,0 +1,11 @@
+.xro/2.0/BankTransactions/{Guid}/History
+
+copy code
+{
+  "HistoryRecords": [
+    {
+      "Details": "Note added by your favourite app!"
+    }
+    ...
+  ]
+}
