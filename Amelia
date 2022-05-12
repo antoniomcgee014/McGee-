@@ -1,4 +1,4 @@
-PUT https://api.xero.com/api.xro/2.0/BankTransfers
+https://api.xero.com/api.xro/2.0/BankTransfers
 
 
 copy code
