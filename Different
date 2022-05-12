@@ -1,0 +1,19 @@
+{
+  "id": "debrev_1KyiOW2eZvKYlo2Cs8iXQGFA",
+  "object": "debit_reversal",
+  "amount": 1000,
+  "currency": "usd",
+  "financial_account": "fa_1KyiOV2eZvKYlo2CQSlnm5I3",
+  "hosted_regulatory_receipt_url": "https://payments.stripe.com/regulatory-receipt/debrev_test_YWNjdF8xMDMyRDgyZVp2S1lsbzJDLGRyZXZiX0xnNFhUQmI3cEZ5RnRZbGs0OUY0QUhDeVNMR3oyd0M0000DMAjekBC",
+  "linked_flows": null,
+  "livemode": false,
+  "metadata": {},
+  "network": "ach",
+  "received_debit": "rd_1KyiOW2eZvKYlo2CeFdgYOVq",
+  "resolution": null,
+  "status": "processing",
+  "status_transitions": {
+    "completed_at": null
+  },
+  "transaction": "trxn_1KyiOW2eZvKYlo2CtWBwcm0R"
+}
