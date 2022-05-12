@@ -1,0 +1,46 @@
+{
+  "id": "rd_1KyiOW2eZvKYlo2CvRimFpqh",
+  "object": "received_debit",
+  "amount": 54321,
+  "created": 1652386436,
+  "currency": "usd",
+  "description": "Stripe Test",
+  "failure_code": null,
+  "financial_account": "fa_1KyiOV2eZvKYlo2CQSlnm5I3",
+  "hosted_regulatory_receipt_url": "https://payments.stripe.com/regulatory-receipt/rd_test_YWNjdF8xMDMyRDgyZVp2S1lsbzJDLHJlY2RiX0xnNFg3UDBXS0dDNVVFdGd2dlpUd1oxMXRLczAwU2k00002AR3tIKZ",
+  "initiating_payment_method_details": {
+    "billing_details": {
+      "address": {
+        "city": null,
+        "country": null,
+        "line1": null,
+        "line2": null,
+        "postal_code": null,
+        "state": null
+      },
+      "email": null,
+      "name": "Jane Austen"
+    },
+    "type": "us_bank_account",
+    "us_bank_account": {
+      "bank_name": "STRIPE TEST BANK",
+      "last4": "6789",
+      "routing_number": "110000000"
+    }
+  },
+  "linked_flows": {
+    "debit_reversal": null,
+    "inbound_transfer": null,
+    "issuing_authorization": null,
+    "issuing_transaction": null,
+    "received_hold": null
+  },
+  "livemode": false,
+  "network": "ach",
+  "reversal_details": {
+    "deadline": 1652659200,
+    "restricted_reason": null
+  },
+  "status": "succeeded",
+  "transaction": "trxn_1KyiOW2eZvKYlo2C2L5opdqs"
+}
