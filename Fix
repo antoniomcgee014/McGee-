@@ -1,0 +1,49 @@
+{
+  "id": "obt_1KyiOV2eZvKYlo2CbZNsCVHD",
+  "object": "outbound_transfer",
+  "amount": 10000,
+  "cancelable": true,
+  "created": 1652386435,
+  "currency": "usd",
+  "description": "OutboundTransfer to my external bank account",
+  "destination_payment_method": "pm_1KyiOV2eZvKYlo2CkgjwwWrm",
+  "destination_payment_method_details": {
+    "billing_details": {
+      "address": {
+        "city": "San Francisco",
+        "country": "US",
+        "line1": "1234 Fake Street",
+        "line2": null,
+        "postal_code": "94102",
+        "state": "CA"
+      },
+      "email": null,
+      "name": "Jane Austen"
+    },
+    "type": "us_bank_account",
+    "us_bank_account": {
+      "account_holder_type": "company",
+      "account_type": "checking",
+      "bank_name": "STRIPE TEST BANK",
+      "fingerprint": "1JWtPxqbdX5Gamtc",
+      "last4": "6789",
+      "network": "ach",
+      "routing_number": "110000000"
+    }
+  },
+  "expected_arrival_date": 1652486400,
+  "financial_account": "fa_1KyiOV2eZvKYlo2CQSlnm5I3",
+  "hosted_regulatory_receipt_url": "https://payments.stripe.com/regulatory-receipt/obt_test_YWNjdF8xMDMyRDgyZVp2S1lsbzJDLG91dHRiX0xnNFh2RVNVVEdJYXFDNndONEpERmRIRUVua3haWTk00005YYYB35r",
+  "livemode": false,
+  "metadata": {},
+  "returned_details": null,
+  "statement_descriptor": "transfer",
+  "status": "processing",
+  "status_transitions": {
+    "canceled_at": null,
+    "failed_at": null,
+    "posted_at": null,
+    "returned_at": null
+  },
+  "transaction": "trxn_1KyiOV2eZvKYlo2CITu12AKF"
+}
