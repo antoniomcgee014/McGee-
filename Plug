@@ -1,0 +1,19 @@
+{
+  "id": "idp_1KyiOV2eZvKYlo2C04lgSycF",
+  "object": "issuing.dispute",
+  "amount": 2000,
+  "created": 1652386435,
+  "currency": "usd",
+  "evidence": {
+    "fraudulent": {
+      "additional_documentation": null,
+      "explanation": "Fraud; card reported lost on 05/12/2022"
+    },
+    "reason": "fraudulent"
+  },
+  "livemode": false,
+  "metadata": {},
+  "redaction": null,
+  "status": "unsubmitted",
+  "transaction": "ipi_1JIdAl2eZvKYlo2Cfr8US8uB"
+}
